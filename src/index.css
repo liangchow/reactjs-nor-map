@@ -13,6 +13,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  background: #F9F9F9;
+  fill: #DCDCDC;
+}
+
+.bg-legal {
+   fill: #7FFFD4;
+   stroke: #2F4F4F;
+   stroke-width: 2px; 
+   transition: fill 0.3s;
+   }
+
+.bg-legal:hover {
+  fill: #5F9EA0;
+  display: {id};
+}
 
 @media (prefers-color-scheme: light) {
   :root {

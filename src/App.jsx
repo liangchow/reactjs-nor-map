@@ -1,11 +1,10 @@
-import { useState } from 'react'
+import NorMap from '../components/NorMap'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      
+      <NorMap />
     </>
   )
 }

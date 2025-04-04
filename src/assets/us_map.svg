@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<style>
-  .bg-legal { background: aliceblue; }
-</style>
+
 
 <svg
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -14,6 +12,24 @@
    style="stroke-linejoin: round; stroke:#000; fill: none;"
    version="1.1"
    viewBox="0 0 1000 589">
+
+    <!-- <style>
+    *{
+        background: #F9F9F9;
+        fill: #DCDCDC;
+    }
+    .bg-legal {
+         fill: #7FFFD4;
+         stroke: #2F4F4F;
+         stroke-width: 2px; 
+         transition: fill 0.3s;
+         }
+
+    .bg-legal:hover {
+        fill: #5F9EA0;
+        display: {id};
+    }
+    </style> -->
 
   <path
      id="MA"
