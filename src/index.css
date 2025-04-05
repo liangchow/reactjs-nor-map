@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #F9F9F9;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,32 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-*{
-  background: #F9F9F9;
-  fill: #DCDCDC;
-}
-
-.bg-legal {
-   fill: #7FFFD4;
-   stroke: #2F4F4F;
-   stroke-width: 2px; 
-   transition: fill 0.3s;
-   }
-
-.bg-legal:hover {
-  fill: #5F9EA0;
-  display: {id};
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: white;
+    /* background-color: #F9F9F9; */
   }
   a:hover {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #F9F9F9;
   }
 }

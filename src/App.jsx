@@ -1,11 +1,11 @@
-import NorMap from '../components/NorMap'
+import Logo from './assets/us-map.svg?react'
+import './App.css'
+
 
 function App() {
 
   return (
-    <>
-      <NorMap />
-    </>
+    <Logo />
   )
 }
 
