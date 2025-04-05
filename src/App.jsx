@@ -1,11 +1,12 @@
-import Logo from './assets/us-map.svg?react'
-import './App.css'
+import NorMap from './assets/us-map.svg?react'
 
 
 function App() {
 
   return (
-    <Logo />
+    <>
+      <NorMap className="normap" />
+    </>
   )
 }
 

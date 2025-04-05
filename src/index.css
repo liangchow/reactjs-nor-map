@@ -13,10 +13,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.normap{
+  background: #F9F9F9;
+  fill: #DCDCDC;
+}
+
+.normap 
+.bglegal {
+   fill: #7FFFD4;
+   stroke: #2F4F4F;
+   stroke-width: 2px; 
+   transition: fill 0.3s;
+   }
+
+.normap 
+.bglegal:hover {
+  fill: #5F9EA0;
+  display: {id};
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: white;
+    background-color: #000000;
     /* background-color: #F9F9F9; */
   }
   a:hover {
