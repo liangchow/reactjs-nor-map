@@ -19,6 +19,12 @@
   gap: 14px;
 }
 
+header {
+  display: flex;
+  align-items: stretch;
+  align-content: center;
+}
+
 .normap{
   display: flex;
   flex-direction: column;
@@ -45,11 +51,5 @@
     color: #213547;
     background-color: #000000;
     /* background-color: #F9F9F9; */
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #F9F9F9;
   }
 }
