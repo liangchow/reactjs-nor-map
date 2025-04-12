@@ -1,12 +1,13 @@
-import NorMap from './assets/us-map.svg?react'
-import Header from '../components/Header'
+import Main from '../components/Main'
+import SideBar from '../components/SideBar'
+import Footer from '../components/Footer'
 
 function App() {
 
   return (
     <>
-      <Header />
-      <NorMap className="normap" />
+      <Main />
+      <SideBar />
     </>
   )
 }

@@ -1,54 +1,123 @@
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color: white;
+    background-color: #F9F9F9;
+    
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 * {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  /* border: 1px solid black !important; */
 }
 
 #root {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  padding: 14px;
-  background: #F9F9F9;
-  gap: 14px;
+  display: relative;
+  /* flex-direction: column; */
+  /* background: #F9F9F9; */
 }
 
-header {
-  display: flex;
-  align-items: stretch;
-  align-content: center;
-}
-
-.normap{
+.imgContainer {
   display: flex;
   flex-direction: column;
-  background: #F9F9F9;
-  fill: #DCDCDC;
+  max-height: 100vh;
+  width: 100%;
 }
 
-.normap 
-.bglegal {
+.norMap {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  object-fit: cover;
+  /* background: #F9F9F9;
+  fill: #DCDCDC; */
+}
+
+.norMap 
+.bgLegal {
    fill: #7FFFD4;
    stroke: #2F4F4F;
    stroke-width: 2px; 
    transition: fill 0.3s;
    }
 
-.normap 
-.bglegal:hover {
+.norMap 
+.bgLegal:hover {
   fill: #5F9EA0;
-  display: {id};
+  /* display: {id}; */
+}
+
+.sidebar {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.bgOverlay {
+  position: absolute;
+  inset: 0;
+  background: #030615;
+  opacity: 0.6;
+}
+
+.sidebarContents {
+  z-index: 15;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-y: scroll;
+  height: 100%;
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  background: #030615;
+}
+
+.sidebarContents div {
+  flex: 1;
+}
+
+.sidebarContents button {
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  margin-right: auto;
+  cursor: pointer;
+  transition-duration: 200ms;
+  padding: 1rem 0;
+}
+
+.sidebarContents button:hover {
+  opacity: 0.7;
 }
 
 @media (min-width: 640px) {
-  :root {
-    color: #213547;
-    background-color: #000000;
-    /* background-color: #F9F9F9; */
+  .sidebar {
+    position: relative;
+    inset: unset;
+    min-width: 30%;
+    box-shadow: 0 0 40px 1px #030615;
+  }
+
+  .sidebarContents {
+    margin: unset;
+
+  }
+
   }
 }
