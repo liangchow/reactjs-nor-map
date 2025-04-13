@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   max-height: 100vh;
-  width: 100%;
+  width: 75%;
 }
 
 .norMap {
@@ -54,6 +54,7 @@
 .norMap 
 .bgLegal:hover {
   fill: #5F9EA0;
+  cursor: pointer;
   /* display: {id}; */
 }
 
@@ -82,7 +83,7 @@
   /* overflow-y: scroll; */
   height: 100%;
   width: 100%;
-  max-width: 640px;
+  min-width: 320px;
   margin-left: auto;
   background: #030615;
 }
@@ -120,4 +121,3 @@
   }
 
   }
-}
