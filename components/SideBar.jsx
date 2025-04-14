@@ -9,9 +9,9 @@ export default function SideBar(props) {
       <div className="bgOverlay" onClick={handleToggleModal}></div>
           <div className="sidebarContents">
             <h2>The Brutal Martian Lanscape</h2>
-            <div>
-              <p>Description</p>
-              <p>A whole alo of text around abput the poicture akdsflkdashfadkflkdsahflkdsahf
+            <div className="descriptionContainer">
+              <p className="descriptionTitle">Description</p>
+              <p>A whole lot of text about the picture akdsflkdashfadkflkdsahflkdsahf
                 jsdfakdsjf dsafksjdlk</p>
             </div>
             <button onClick={handleToggleModal}>

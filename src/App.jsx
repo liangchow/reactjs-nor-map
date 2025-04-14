@@ -11,9 +11,13 @@ function App() {
     setShowModal(!showModal)
   }
 
+  function handleToggleModalMap(){
+    setShowModal(true)
+  }
+
   return (
     <>
-      <Main handleToggleModal={handleToggleModal} />
+      <Main handleToggleModalMap={handleToggleModalMap} />
       {showModal && (<SideBar handleToggleModal= {handleToggleModal} />)}
     </>
   )

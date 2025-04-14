@@ -3,11 +3,11 @@ import NorMap from '../src/assets/us-map.svg?react'
 
 export default function Main(props) {
 
-  const {handleToggleModal} = props
+  const {handleToggleModalMap} = props
 
   return (
     <div className="imgContainer">
-        <NorMap className="norMap" onClick={handleToggleModal}/> 
+        <NorMap className="norMap" onClick={handleToggleModalMap}/> 
     </div>
 
   )
