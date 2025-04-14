@@ -19,6 +19,7 @@ function App() {
     <>
       <Main handleToggleModalMap={handleToggleModalMap} />
       {showModal && (<SideBar handleToggleModal= {handleToggleModal} />)}
+      <Footer />
     </>
   )
 }

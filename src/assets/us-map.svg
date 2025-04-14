@@ -2,7 +2,9 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   style="stroke-linejoin: round; stroke:#000000 ; fill: none; fill-opacity: 0.5; background-color: transparent"
+   style="stroke-linejoin: round; stroke:#000000 ; fill: none; fill-opacity: 0.5; background-color: transparent;"
+   min-width="800"
+   min-height="600"
    version="1.1"
    viewBox="0 0 1200 580">
 
