@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 function App() {
 
   const [showModal, setShowModal] = useState(false)
-  const [data, setData] = useState({
+  const [stateData, setStateData] = useState({
     class: null,
     id: null,
     name: null,
