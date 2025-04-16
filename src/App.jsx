@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 function App() {
 
   const [showModal, setShowModal] = useState(false)
-  const [stateDisplay, setStateDisplay] = useState({name: null})
+  const [stateDisplay, setStateDisplay] = useState('')
   const [stateData, setStateData] = useState({
     // class: null,
     id: null,
@@ -20,7 +20,7 @@ function App() {
 
   function handleStateOnMouseOver(e){
     const state = e.target;
-    const newState = {name: state.getAttribute('name')}
+    const newState = state.getAttribute('name')
 
     setStateDisplay(newState)
   }
@@ -42,7 +42,7 @@ function App() {
     <>
       <Main handleStateOnMouseOver={handleStateOnMouseOver} handleStateClick={handleStateClick} />
       {showModal && (<SideBar handleToggleModal={handleToggleModal} stateData={stateData} />)}
-      <Footer stateDisplay={stateDisplay} stateData={stateData}/>
+      <Footer stateDisplay={stateDisplay} />
     </>
   )
 }
