@@ -8,7 +8,7 @@ function App() {
   const [showModal, setShowModal] = useState(false)
   const [stateDisplay, setStateDisplay] = useState({name: null})
   const [stateData, setStateData] = useState({
-    class: null,
+    // class: null,
     id: null,
     name: null,
     d: null,
@@ -28,7 +28,7 @@ function App() {
   function handleStateClick(e){
     const state = e.target;
     const newData = {
-      class: state.getAttribute('class'),
+      // class: state.getAttribute('class'),
       id: state.getAttribute('id'),
       name: state.getAttribute('name'),
       d: state.getAttribute('d'),
