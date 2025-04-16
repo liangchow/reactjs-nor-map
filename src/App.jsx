@@ -22,8 +22,8 @@ function App() {
       d: state.getAttribute('d'),
     }
 
-    setData(newData)
-    handleToggleModal()
+    setStateData(newData)
+    setShowModal(true)
   }
 
   function handleToggleModal(){
@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-      <Main handleStateClick={handleStateClick} />
+      <Main handleStateClick={handleStateClick} stateData={stateData} setStateData={setStateData} />
       {showModal && (<SideBar handleToggleModal={handleToggleModal} stateData={stateData} />)}
       <Footer stateData={stateData} />
     </>
