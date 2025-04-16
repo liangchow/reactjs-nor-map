@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react'
+import { useState } from 'react'
 import Main from '../components/Main'
 import SideBar from '../components/SideBar'
 import Footer from '../components/Footer'
@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 function App() {
 
   const [showModal, setShowModal] = useState(false)
+  const [stateDisplay, setStateDisplay] = useState({name: null})
   const [stateData, setStateData] = useState({
     class: null,
     id: null,
@@ -13,6 +14,17 @@ function App() {
     d: null,
   })
   
+  function handleToggleModal(){
+    setShowModal(!showModal)
+  }
+
+  function handleStateOnMouseOver(e){
+    const state = e.target;
+    const newState = {name: state.getAttribute('name')}
+
+    setStateDisplay(newState)
+  }
+
   function handleStateClick(e){
     const state = e.target;
     const newData = {
@@ -26,20 +38,11 @@ function App() {
     setShowModal(true)
   }
 
-  function handleToggleModal(){
-    setShowModal(!showModal)
-  }
-
-  function handleToggleModalMap(){
-    setShowModal(true)
-  }
-
-
   return (
     <>
-      <Main handleStateClick={handleStateClick} stateData={stateData} setStateData={setStateData} />
+      <Main handleStateOnMouseOver={handleStateOnMouseOver} handleStateClick={handleStateClick} />
       {showModal && (<SideBar handleToggleModal={handleToggleModal} stateData={stateData} />)}
-      <Footer stateData={stateData} />
+      <Footer stateDisplay={stateDisplay} stateData={stateData}/>
     </>
   )
 }

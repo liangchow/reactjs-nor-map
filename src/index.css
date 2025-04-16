@@ -38,6 +38,7 @@ path {
 .imgContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-height: 90vh;
   width: 90vw;
 }
@@ -92,7 +93,7 @@ path {
 }
 
 .sidebarContents h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 200;
 }
 
