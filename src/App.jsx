@@ -6,7 +6,10 @@ import Footer from '../components/Footer'
 function App() {
 
   const [showModal, setShowModal] = useState(false)
-  const [stateDisplay, setStateDisplay] = useState('')
+  const [stateDisplay, setStateDisplay] = useState({
+    id: null,
+    name: null
+  })
   const [stateData, setStateData] = useState({
     // class: null,
     id: null,
@@ -20,7 +23,9 @@ function App() {
 
   function handleStateOnMouseOver(e){
     const state = e.target;
-    const newState = state.getAttribute('name')
+    const newState = {
+      id: state.getAttribute('id'),
+      name: state.getAttribute('name'),}
 
     setStateDisplay(newState)
   }

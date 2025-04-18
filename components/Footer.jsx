@@ -8,7 +8,7 @@ export default function Footer(props) {
     <footer>
       <div>
          <h1>NOR PROJECT</h1>
-         <h2>{stateDisplay}</h2>       
+         <h2>{stateDisplay.name} | {stateDisplay.id}</h2>       
       </div>
     </footer>
   )
