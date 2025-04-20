@@ -161,10 +161,15 @@ footer h2 {
 }
 
 @media (min-width: 640px) {
+  .imgContainer {
+    width: 100%;
+  }
+
+
   .sidebar {
     position: relative;
     inset: unset;
-    min-width: 30%;
+    max-width: 30%;
     max-height: 100vh;
     box-shadow: 0 0 40px 5px #030615;
   }
