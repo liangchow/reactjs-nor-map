@@ -33,7 +33,6 @@ function App() {
   function handleStateClick(e){
     const state = e.target;
     const newData = {
-      // class: state.getAttribute('class'),
       id: state.getAttribute('id'),
       name: state.getAttribute('name'),
       d: state.getAttribute('d'),
