@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid black !important;
+  /* border: 1px solid black !important; */
 }
 
 #root {
@@ -78,7 +78,7 @@ path {
 }
 
 .sidebarContents {
-  z-index: 15;
+  z-index: 100;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -87,6 +87,7 @@ path {
   overflow-y: scroll;
   height: 100%;
   width: 100%;
+  min-width: 250px;
   max-width: 600px;
   margin-left: auto;
   background: #030615;
@@ -134,47 +135,54 @@ path {
 footer {
   position: fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  align-items: left;
+  /* gap: 0.5rem; */
   padding: 1rem;
-  padding-bottom: 8px;
-}
-
-#footer-top {
-  position: relative;
-  left: 0;
-  inset: 0;
-  z-index: -1;
+  padding-bottom: 2px;
 }
 
 footer h1 {
-  color: black;
+  color: #000000;
   font-size: 2rem;
   font-weight: 200;
 }
 
 footer h2 {
-  color: black;
+  color: #000000;
   font-size: 1.6rem;
 }
+
+footer small {
+  color: #000000;
+}
+
+#footer-top {
+  inset: 0;
+  z-index: -1;
+}
+
+#footer-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 
 #footer-bottom a {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.3rem;
-  /* padding-right: 0.2rem; */
-  /* background:#1a1e32; */
+  gap: 0.4rem;
+  padding: 0.2rem;
   border-radius: 4rem;
   border: 1px solid #1a1e32;
   transition-duration: 200ms;
   font-size: 0.8rem;
   text-decoration: none;
-  /* margin: auto; */
 }
 
 #footer-bottom a:hover {
@@ -187,7 +195,6 @@ footer h2 {
     width: 100%;
   }
 
-
   .sidebar {
     position: relative;
     inset: unset;
@@ -199,7 +206,6 @@ footer h2 {
   .sidebarContents {
     margin: unset;
     width: 100%;
-
   }
 
   }
