@@ -8,14 +8,11 @@ export default function Footer(props) {
     <footer>
       <div>
          <h1>NOR PROJECT</h1>
-         <h2>{stateDisplay.name} {stateDisplay.id}</h2>       
-      </div>
-      <div>
-        <small>Created by</small>
-        <a target="_blank" href="https://www.linkedin.com/in/lcchow">
-          <p>@lcchow</p>
-          <i className="fa-brands fa-linkedin-in"></i>
-        </a>
+         <h2>{stateDisplay.name} {stateDisplay.id}</h2>     
+          <a target="_blank" href="https://www.linkedin.com/in/lcchow">
+            <p>Created by @lcchow</p>
+            <i className="fa-brands fa-linkedin-in"></i>
+          </a>
       </div>
     </footer>
   )
