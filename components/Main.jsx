@@ -1,5 +1,4 @@
-import React from 'react'
-import Map from  './Map'
+// import Map from  './Map'
 import NorMap from '../src/assets/us-map.svg?react'
 
 export default function Main(props) {
