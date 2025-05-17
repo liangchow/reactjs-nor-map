@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid black !important; */
+  border: 1px solid black !important;
 }
 
 #root {
@@ -137,17 +137,18 @@ footer {
   left: 0;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
   padding-bottom: 8px;
 }
 
-footer div {
+#footer-top {
+  position: relative;
+  left: 0;
   inset: 0;
   z-index: -1;
-  display: flex;
-  flex-direction: column;
 }
 
 footer h1 {
@@ -161,10 +162,9 @@ footer h2 {
   font-size: 1.6rem;
 }
 
-footer a {
+#footer-bottom a {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
   padding: 0.3rem;
   /* padding-right: 0.2rem; */
@@ -174,10 +174,10 @@ footer a {
   transition-duration: 200ms;
   font-size: 0.8rem;
   text-decoration: none;
-  margin: auto;
+  /* margin: auto; */
 }
 
-footer a:hover {
+#footer-bottom a:hover {
   border: 1px solid #60a5fa;
 }
 
