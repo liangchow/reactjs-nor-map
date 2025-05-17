@@ -11,7 +11,7 @@ export default function Footer(props) {
       <div id="footer-bottom">
           <small>Created by </small>     
           <a target="_blank" href="https://www.linkedin.com/in/lcchow">
-            <p>@lcchow</p>
+            <p>@lchow</p>
             <i className="fa-brands fa-linkedin-in"></i>
           </a>
       </div>

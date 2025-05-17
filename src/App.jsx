@@ -5,18 +5,19 @@ import Footer from '../components/Footer'
 
 function App() {
 
+  // Declare useState()
   const [showModal, setShowModal] = useState(false)
   const [stateDisplay, setStateDisplay] = useState({
-    id: null,
     name: null
   })
   const [stateData, setStateData] = useState({
-    // class: null,
     id: null,
+    abbr: null,
     name: null,
-    d: null,
   })
-  
+
+
+  // Declare functions
   function handleToggleModal(){
     setShowModal(!showModal)
   }
@@ -24,7 +25,7 @@ function App() {
   function handleStateOnMouseOver(e){
     const state = e.target;
     const newState = {
-      id: state.getAttribute('id'),
+      abbr: state.getAttribute('abbr'),
       name: state.getAttribute('name'),}
 
     setStateDisplay(newState)
@@ -34,9 +35,10 @@ function App() {
     const state = e.target;
     const newData = {
       id: state.getAttribute('id'),
+      abbr: state.getAttribute('abbr'),
       name: state.getAttribute('name'),
-      d: state.getAttribute('d'),
     }
+
 
     setStateData(newData)
     setShowModal(true)

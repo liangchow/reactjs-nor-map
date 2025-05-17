@@ -299,5 +299,10 @@ export const stateInfo = {
         order : null,
         background: "",
     },
+    50: { // DC
+        status : "inactive",
+        order : null,
+        background: "",
+    },
 
 }

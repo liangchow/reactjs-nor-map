@@ -175,12 +175,13 @@ footer small {
 #footer-bottom a {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.2rem;
-  border-radius: 4rem;
+  /* justify-content: center; */
+  gap: 0.3rem;
+  padding: 0.3rem;
+  border-radius: 2rem;
   border: 1px solid #1a1e32;
   transition-duration: 200ms;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   text-decoration: none;
 }
 

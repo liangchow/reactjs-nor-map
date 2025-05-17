@@ -2,7 +2,7 @@ import { stateInfo as state_info} from '../src/utils/index.js'
 
 export default function SideBar(props) {
 
-  const {handleToggleModal, stateData} = props
+  const {handleToggleModal, stateData, stateDescription} = props
 
   return (
     <div className="sidebar">
@@ -11,11 +11,8 @@ export default function SideBar(props) {
             <h2>{stateData.name}</h2>
             <div className="descriptionContainer">
               <p className="descriptionTitle">Description</p>
-              <p>{stateData.d}</p>
               <p>
-                {Object.keys(state_info).map((st, stIndex)=>{
-                  st
-                })}
+                {state_info[stateData.id].background}
               </p>
             </div>
             <button onClick={handleToggleModal}>
