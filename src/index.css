@@ -166,10 +166,11 @@ footer small {
 
 #footer-bottom {
   display: flex;
-  width: 100%;
+  width: 87vw;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  font-size: 0.6rem;
 }
 
 #footer-bottom a {
@@ -181,7 +182,6 @@ footer small {
   border-radius: 2rem;
   border: 1px solid #1a1e32;
   transition-duration: 200ms;
-  font-size: 0.6rem;
   text-decoration: none;
 }
 
