@@ -55,9 +55,9 @@ export const stateInfo = {
     },
 
     9: { // GA
-        status : "inactive",
-        order : null,
-        background: "",
+        status : "active",
+        order : 13,
+        background: "SB241 to legalize human composting was introduced in February 2025 by Senator Ricky Williams. The bill passed its second floor vote and was signed into law on May 9, 2025. Georgia became the 13th state in the U.S. to legalize human composting.",
     },
 
     10: { // HI
