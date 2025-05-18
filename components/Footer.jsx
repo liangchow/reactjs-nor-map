@@ -9,7 +9,7 @@ export default function Footer(props) {
          <h2>{stateDisplay.name}</h2>
       </div>
       <div id="footer-bottom">
-          <small>Created by </small>     
+          <small>Created with 💛 by </small>     
           <a target="_blank" href="https://www.linkedin.com/in/lcchow">
             <p>@lchow</p>
             <i className="fa-brands fa-linkedin-in"></i>

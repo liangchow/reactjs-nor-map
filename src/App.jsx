@@ -16,7 +16,6 @@ function App() {
     name: null,
   })
 
-
   // Declare functions
   function handleToggleModal(){
     setShowModal(!showModal)
@@ -38,8 +37,7 @@ function App() {
       abbr: state.getAttribute('abbr'),
       name: state.getAttribute('name'),
     }
-
-
+    
     setStateData(newData)
     setShowModal(true)
   }

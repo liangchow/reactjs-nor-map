@@ -1,5 +1,5 @@
-// import Map from  './Map'
-import NorMap from '../src/assets/us-map.svg?react'
+import { Map } from  './Map'
+// import NorMap from '../src/assets/us-map.svg?react'
 
 export default function Main(props) {
 
@@ -7,8 +7,8 @@ export default function Main(props) {
 
   return (
     <div className="imgContainer">
-        {/* <Map className="norMap" onMouseEnter={handleStateOnMouseOver} onClick={handleStateClick} />   */}
-        <NorMap className="norMap" onMouseOver={handleStateOnMouseOver} onClick={handleStateClick} /> 
+        <Map className="norMap" onMouseEnter={handleStateOnMouseOver} onClick={handleStateClick} />  
+        {/* <NorMap className="norMap" onMouseOver={handleStateOnMouseOver} onClick={handleStateClick} />  */}
     </div>
 
   )
