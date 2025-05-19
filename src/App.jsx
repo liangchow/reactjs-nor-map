@@ -25,8 +25,8 @@ function App() {
     const state = e.target;
     const newState = {
       abbr: state.getAttribute('abbr'),
-      name: state.getAttribute('name'),}
-
+      name: state.getAttribute('name'),
+    }
     setStateDisplay(newState)
   }
 
@@ -37,7 +37,6 @@ function App() {
       abbr: state.getAttribute('abbr'),
       name: state.getAttribute('name'),
     }
-    
     setStateData(newData)
     setShowModal(true)
   }
