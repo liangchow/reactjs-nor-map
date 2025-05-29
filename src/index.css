@@ -132,6 +132,17 @@ path {
   font-weight: 200;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  background: #000;
+  justify-items: center;
+  align-items: center;
+}
+
+
 footer {
   position: fixed;
   bottom: 0;

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Main from '../components/Main'
 import SideBar from '../components/SideBar'
+import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
 
   return (
     <>
+      <Header />
       <Main handleStateOnMouseOver={handleStateOnMouseOver} handleStateClick={handleStateClick} />
       {showModal && (<SideBar handleToggleModal={handleToggleModal} stateData={stateData} />)}
       <Footer stateDisplay={stateDisplay} />
